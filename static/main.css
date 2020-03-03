@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container{
+    background: url(assets/mtns.jpg);
+    height: 100vh;
+    text-align: center;
+}
+
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.logo{
+    color: #fff;
+    font-family: sans-serif;
+    margin-left: -0%;
+}
+
+nav ul{
+    display: flex;
+    margin-left: 58%;
+    white-space: nowrap;
+}
+
+nav ul li {
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    padding:.3em  .9rem  .2em .9rem;
+    margin-top: 1.2rem;
+}
+
+nav ul li:hover {
+    z-index: 23;
+    letter-spacing: 1.5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.hero{
+    margin-top: 7%;
+}
+
+path{
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 300;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+
+@keyframes animate{
+    0%{
+        opacity:0;
+        fill: none;
+        stroke-dashoffset: 300;
+    }
+    30%{
+        opacity: 10;   
+        fill: none;
+        stroke-dashoffset: 300;
+    }
+    90%{
+        fill:rgba(255,255,255,0);
+    }
+    100%{
+        opacity: 10;
+        fill:rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.hero p {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;    
+    font-size: 1.6em;
+    margin-left: 39%;
+    margin-bottom: 12%;
+    color: #fff;
+    animation: type 3.5s ;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 20ch;
+    padding: 0;
+    display: none;
+}
+@keyframes type {
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:20ch;
+    }
+}
+
+.cards {
+    cursor: pointer;
+    /* margin-top: -20%; */
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 3s cubic-bezier(0,0.23,1,.1);
+}
+
+.cards div {
+    margin-left: 3.9%;
+    margin-right: 3.2%;
+    padding: 0% 3% 1.5% 3%;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.cards img{
+    height: 8.5em;
+    width: 14em;
+    margin-top: -22%;
+    margin-bottom: 3%;
+    border-radius: 8px;
+}
